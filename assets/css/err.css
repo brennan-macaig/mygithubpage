@@ -1,0 +1,109 @@
+html, body, .do-you-even-flexbox {
+    height:100%;
+   	width:100%;
+   	overflow-x:hidden;
+}body {
+    margin:0;
+    font:normal 14px/1.2"Roboto", Helvetica, Arial, sans-serif;
+    text-align:center;
+    background:#111 url('http://ppcdn.500px.org/81304401/42c8982c742951618e6a9695e5365a1111b096fe/2048.jpg?v=15') center top/ cover;
+} ::-moz-selection {
+    background:#2fdd11;
+   	color:#fff;
+}::selection {
+    background:#2fdd11;
+    color:#fff;
+}a {
+    text-decoration:none;
+}a:hover, a:active {
+    outline:none;
+ 	text-decoration:underline;
+}a:focus {
+    outline:thin dotted;
+}.do-you-even-flexbox, .container {
+    position:relative;
+    top:0;
+    width:100%;
+    height:100%;
+}.container {
+    padding:8px 20px 15px;
+    display:flex;
+    align-content:center;
+}.box {
+    height:20%;
+   	margin:auto
+}h1 {
+    font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
+    margin:0;
+    color:#000;
+    font-weight:400;
+    font-size:90px;
+}h2 {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    margin:0;
+	color:#000;
+	font-weight:400;
+	font-size:50px;
+}.social {
+	margin-top:30px;
+}.social a {
+	background-color:#F5F7FA;
+	border-radius:35px;
+	margin:0 3px;
+	width:26px;
+	height:26px;
+	padding:16px;
+	display:inline-block;
+	-webkit-transition:background-color .6s ease;
+	transition:background-color .6s ease;
+}.social a:hover, .social a:focus {
+	outline:none;
+	background-color:#FC6E51;
+}.icon {
+	width:26px;
+	height:26px;
+}.icon>path {
+	fill:#111;
+}.links {
+    color:#333;
+    margin-top:30px;
+    font-size:20px;
+}.links a {
+    display:inline-block;
+    padding:0 5px;
+    color:#000;
+	font-size:20px;
+}.links {
+    color:#000;
+    font-size:20px;
+}.links a:hover {
+    color:#000;
+    font-size:20px;
+}
+@media (max-width: 660px) {
+   	h1 {
+        font-size:64px;
+    }h2 {
+        font-size:24px;
+    }
+}
+@media (max-width: 460px) {
+    .do-you-even-flexbox {
+        display:none;
+    }.container {
+        margin:0 auto;
+        margin-top:4%;
+    }.links a {
+        display:block;
+    }h1 {
+        font-size:48px;
+    }
+    h2 {
+        font-size:16px;
+    }
+}
+@media (max-width: 350px) {
+    h1 {
+        font-size:40px;
+    }
+}
