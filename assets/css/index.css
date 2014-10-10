@@ -75,10 +75,10 @@ html, body, .do-you-even-flexbox {
     color:#000;
 	font-size:20px;
 }.links {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }.links a:hover {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }
 @media (max-width: 660px) {
