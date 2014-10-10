@@ -7,7 +7,6 @@ html, body, .do-you-even-flexbox {
     font:normal 14px/1.2"Roboto", Helvetica, Arial, sans-serif;
     text-align:center;
     background:#111 url('https://c4.staticflickr.com/4/3883/15331328401_f42b9bfcf5_h.jpg') center top/ cover;
-    /** Image credit: www.reddit.com/u/rockjoc used with permission. */
 } ::-moz-selection {
     background:#2fdd11;
    	color:#fff;
@@ -33,6 +32,17 @@ html, body, .do-you-even-flexbox {
 }.box {
     height:20%;
    	margin:auto
+}.box {
+    color:#333;
+    margin-top:30px;
+    font-size:30px;
+}.box a {
+    padding:0 5px;
+    color:#000;
+    font-size:20px;
+}.box a:hover{
+    color:#000;
+    font-size:20px;
 }h1 {
     font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
@@ -45,6 +55,29 @@ html, body, .do-you-even-flexbox {
 	color:#000;
 	font-weight:400;
 	font-size:50px;
+}p {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    margin:0;
+    color:#000;
+    font-weight:400;
+    font-size:30px;
+}table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}th,td {
+    padding: 15px;
+}th {
+    font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
+    margin:0;
+    color:#000;
+    font-weight:400;
+    font-size:30px;
+} td {
+    font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
+    margin:0;
+    color:#000;
+    font-weight:400;
+    font-size:20px;
 }.social {
 	margin-top:30px;
 }.social a {
