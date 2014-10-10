@@ -72,7 +72,7 @@ html, body, .do-you-even-flexbox {
 }.links a {
     display:inline-block;
     padding:0 5px;
-    color:#000;
+    color:#fff;
 	font-size:20px;
 }.links {
     color:#fff;
