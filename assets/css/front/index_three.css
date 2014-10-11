@@ -8,10 +8,10 @@ html, body, .do-you-even-flexbox {
     text-align:center;
     background:#111 url('http://i.imgur.com/GmkIauN.jpg') center top/ cover;
 } ::-moz-selection {
-    background:#2fdd11;
+    background:#DF1212;
    	color:#fff;
 }::selection {
-    background:#2fdd11;
+    background:#DF1212;
     color:#fff;
 }a {
     text-decoration:none;
