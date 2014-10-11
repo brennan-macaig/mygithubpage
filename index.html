@@ -16,7 +16,18 @@
         <!-- Bootstrap the fonts CSS -->
 		<link rel="stylesheet" href="assets/css/fonts.css">
         <!-- Bootstrap the custom CSS -->
-        <link rel="stylesheet" href="assets/css/index.css">
+       <!-- <link rel="stylesheet" href="assets/css/index.css"> -->
+       <script>
+			function chooseStyle() {
+ 				var css = new Array('index','index_two','index_three', 'index_four', 'index_five');
+  				var i = Math.floor(Math.random()*css.length);
+  				var style = "assets/css/front/"+css[i]+".css";
+  
+  				return style;
+			}
+
+			document.write('<link rel="stylesheet" href="'+chooseStyle()+'" type="text/css">');
+		</script>
 		<meta name="description" content="Brennan Macaig's independent study site.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
