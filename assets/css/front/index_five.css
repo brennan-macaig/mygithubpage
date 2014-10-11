@@ -8,10 +8,10 @@ html, body, .do-you-even-flexbox {
     text-align:center;
     background:#111 url('http://i.imgur.com/GUW36mf.jpg') center top/ cover;
 } ::-moz-selection {
-    background:#2fdd11;
+    background:#DF12B9;
    	color:#fff;
 }::selection {
-    background:#2fdd11;
+    background:#DF12B9;
     color:#fff;
 }a {
     text-decoration:none;
@@ -35,13 +35,13 @@ html, body, .do-you-even-flexbox {
 }h1 {
     font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
-    color:#A4A4A4;
+    color:#fff;
     font-weight:400;
     font-size:90px;
 }h2 {
     font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
-	color:#A4A4A4;
+	color:#fff;
 	font-weight:400;
 	font-size:50px;
 }.social {
@@ -71,13 +71,13 @@ html, body, .do-you-even-flexbox {
 }.links a {
     display:inline-block;
     padding:0 5px;
-    color:#A4A4A4;
+    color:#fff;
 	font-size:20px;
 }.links {
-    color:#A4A4A4;
+    color:#fff;
     font-size:20px;
 }.links a:hover {
-    color:#A4A4A4;
+    color:#fff;
     font-size:20px;
 }
 @media (max-width: 660px) {
