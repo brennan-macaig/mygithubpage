@@ -7,6 +7,8 @@ html, body, .do-you-even-flexbox {
     font:normal 14px/1.2"Roboto", Helvetica, Arial, sans-serif;
     text-align:center;
     background:#111 url('https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/86069695/620bfdd75a4aab87763a01eda433ce72342431eb/2048.jpg') center top/ cover;
+    overflow-y: hidden;
+	
 } ::-moz-selection {
     background:#DF12B9;
    	color:#fff;
