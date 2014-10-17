@@ -7,6 +7,7 @@ html, body, .do-you-even-flexbox {
     font:normal 14px/1.2"Roboto", Helvetica, Arial, sans-serif;
     text-align:center;
     background:#111 url('https://c4.staticflickr.com/4/3695/10402545913_1a644e7070_h.jpg') center top/ cover;
+    overflow-y: hidden;
 } ::-moz-selection {
     background:#2fdd11;
    	color:#fff;
@@ -65,19 +66,19 @@ html, body, .do-you-even-flexbox {
 }.icon>path {
 	fill:#111;
 }.links {
-    color:#333;
+    color:#fff;
     margin-top:30px;
     font-size:20px;
 }.links a {
     display:inline-block;
     padding:0 5px;
-    color:#000;
+    color:#fff;
 	font-size:20px;
 }.links {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }.links a:hover {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }
 @media (max-width: 660px) {
