@@ -6,9 +6,7 @@ html, body, .do-you-even-flexbox {
     margin:0;
     font:normal 14px/1.2"Roboto", Helvetica, Arial, sans-serif;
     text-align:center;
-    background:#111 url('https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/86069695/620bfdd75a4aab87763a01eda433ce72342431eb/2048.jpg') center top/ cover;
-    overflow-y: hidden;
-	
+    background:#111 url('http://i.imgur.com/GUW36mf.jpg') center top/ cover;
 } ::-moz-selection {
     background:#DF12B9;
    	color:#fff;
@@ -37,13 +35,13 @@ html, body, .do-you-even-flexbox {
 }h1 {
     font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
-    color:#000;
+    color:#fff;
     font-weight:400;
     font-size:90px;
 }h2 {
     font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
-	color:#000;
+	color:#fff;
 	font-weight:400;
 	font-size:50px;
 }.social {
@@ -73,13 +71,13 @@ html, body, .do-you-even-flexbox {
 }.links a {
     display:inline-block;
     padding:0 5px;
-    color:#000;
+    color:#fff;
 	font-size:20px;
 }.links {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }.links a:hover {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }
 @media (max-width: 660px) {
