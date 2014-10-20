@@ -65,19 +65,19 @@ html, body, .do-you-even-flexbox {
 }.icon>path {
 	fill:#111;
 }.links {
-    color:#333;
+    color:#fff;
     margin-top:30px;
     font-size:20px;
 }.links a {
     display:inline-block;
     padding:0 5px;
-    color:#000;
+    color:#fff;
 	font-size:20px;
 }.links {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }.links a:hover {
-    color:#000;
+    color:#fff;
     font-size:20px;
 }
 @media (max-width: 660px) {
