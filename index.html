@@ -13,14 +13,61 @@
 <html>
 	<head>
 	<noscript>
-  		<style>html{display:none;}</style>
+  		<style>
+  		html{
+  		display:none;
+  		}</style>
   		<meta http-equiv="refresh" content="0.0;url=error.html">
 	</noscript>
 	<style type="text/css">
 		body {
     			overflow-y:hidden;
 		}
+		#fade h1 {
+			opacity: 0;
+    			margin-top: 25px;
+    			font-size: 21px;
+			text-align: center;
+    			-webkit-transition: opacity 2s ease-in;
+    			-moz-transition: opacity 2s ease-in;
+    			-o-transition: opacity 2s ease-in;
+    			-ms-transition: opacity 2s ease-in;
+    			transition: opacity 2s ease-in;
+		}
+		#fade h1.load {
+			opacity: 1;
+		}
+		#fade h2 {
+			opacity: 0;
+    			margin-top: 25px;
+    			font-size: 21px;
+			text-align: center;
+    			-webkit-transition: opacity 4s ease-in;
+    			-moz-transition: opacity 4s ease-in;
+    			-o-transition: opacity 4s ease-in;
+    			-ms-transition: opacity 4s ease-in;
+    			transition: opacity 4s ease-in;
+		}
+		#fade h2.load {
+			opacity: 1;
+		}
+		#fade a {
+			opacity: 0;
+    			margin-top: 25px;
+    			font-size: 21px;
+			text-align: center;
+    			-webkit-transition: opacity 5s ease-in;
+    			-moz-transition: opacity 5s ease-in;
+    			-o-transition: opacity 5s ease-in;
+    			-ms-transition: opacity 5s ease-in;
+    			transition: opacity 5s ease-in;
+		}
+		#fade a.load {
+			opacity: 1;
+		}
 	</style>
+	<script>document.getElementById("fade").children[0].className += " load";</script>
+
 		<title>Home | Brennan Macaig</title>
 		<!-- Favicon! YAY! -->
 		<link rel="icon" type="image/png" href="imgs/icon.png">
@@ -48,14 +95,16 @@
 		<a href="javascript:history.go(0)"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-refresh-128.png" widt="64" height="64" alt="Refresh"></a>
 		<div class="container">
 			<div class="box">
-				<h1>Hey There, I'm Brennan.</h1>
-				<h2>This is my website, portfolio and blog.</h2>
-				<div class="links">
-					<a href="blog.html" title="My blog">| Blog |</a>
-					<a href="projects.html" title="My projects">| Projects |</a>
-					<a href="downloads.html" title="Download my stuff!">| Downloads |</a>
-					<a href="contact.html" title="Contact me through various means">| Get In Touch |</a>
-					<a href="about.html" title="Learn about me">| About Me |</a>
+				<div id="fade">
+					<h1>Hey There, I'm Brennan.</h1>
+					<h2>This is my website, portfolio and blog.</h2>
+					<div class="links">
+						<a href="blog.html" title="My blog">| Blog |</a>
+						<a href="projects.html" title="My projects">| Projects |</a>
+						<a href="downloads.html" title="Download my stuff!">| Downloads |</a>
+						<a href="contact.html" title="Contact me through various means">| Get In Touch |</a>
+						<a href="about.html" title="Learn about me">| About Me |</a>
+					</div>
 				</div>
 			</div>
 		</div>
