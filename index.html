@@ -23,48 +23,28 @@
 		body {
     			overflow-y:hidden;
 		}
-		#fade h1 {
-			opacity: 0;
-    			margin-top: 25px;
-    			font-size: 21px;
-			text-align: center;
-    			-webkit-transition: opacity 2s ease-in;
-    			-moz-transition: opacity 2s ease-in;
-    			-o-transition: opacity 2s ease-in;
-    			-ms-transition: opacity 2s ease-in;
-    			transition: opacity 2s ease-in;
+		#fader h1 {
+			animation: fadein 5s;
+    			-moz-animation: fadein 5s; /* Firefox */
+    			-webkit-animation: fadein 5s; /* Safari and Chrome */
+    			-o-animation: fadein 5s; /* Opera */
 		}
-		#fade h1.load {
-			opacity: 1;
+		#fader h2 {
+			animation: fadein 7s;
+			-moz-animation: fadein 7s; /* Firefox */
+			-webkit-animation: fadein 7s; /* safari and Chrome */
+			-o-animation: fadein 7s; /* Opera */
 		}
-		#fade h2 {
-			opacity: 0;
-    			margin-top: 25px;
-    			font-size: 21px;
-			text-align: center;
-    			-webkit-transition: opacity 4s ease-in;
-    			-moz-transition: opacity 4s ease-in;
-    			-o-transition: opacity 4s ease-in;
-    			-ms-transition: opacity 4s ease-in;
-    			transition: opacity 4s ease-in;
+		#fader a {
+			animation: fadein 10s;
+			-moz-animation: fadein 10s; /* Firefox */
+			-webkit-animation: fadein 10s; /* safari and Chrome */
+			-o-animation: fadein 10s; /* Opera */
 		}
-		#fade h2.load {
-			opacity: 1;
-		}
-		#fade a {
-			opacity: 0;
-    			margin-top: 25px;
-    			font-size: 21px;
-			text-align: center;
-    			-webkit-transition: opacity 5s ease-in;
-    			-moz-transition: opacity 5s ease-in;
-    			-o-transition: opacity 5s ease-in;
-    			-ms-transition: opacity 5s ease-in;
-    			transition: opacity 5s ease-in;
-		}
-		#fade a.load {
-			opacity: 1;
-		}
+		@keyframes fadein {from {opacity:0;} to {opacity:1;}}@-moz-keyframes fadein {from {opacity:0;}to {opacity:1;}}@-webkit-keyframes fadein {from {opacity:0;} to {opacity:1;}}@-o-keyframes fadein {from {opacity:0;} to {opacity: 1;}}
+		#fader h1.load {opacity: 1;}
+		#fader h2.load {opacity: 1;}
+		#fader a.load {opacity: 1;}
 	</style>
 	<script>document.getElementById("fade").children[0].className += " load";</script>
 
