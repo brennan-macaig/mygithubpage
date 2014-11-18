@@ -7,47 +7,72 @@ All Rights Reserved.
 
 ### Basics
 
-This is a website using GH-Pages free hosting for projects.
+This is the repository for my website. Here you can find the source code that is **live, right now** on my site.
 
-This repository is designed to hold various projects for Viewing, Downloading, Contributing, and anything else you can do with projects.
+This repository is open for contribution, but contributing to my repo is very limited.
 
-### Repo-Structure
 
-The repository is designed with **TWO BRANCHES IN MIND**. Here's how they work:
 
-* MASTER BRANCH - This is the "Build" branch. Anything stored on the Master branch may be volatile, untested, and will be fresh-off-the-press builds. We cannot confirm that these builds are safe, nor can we say that these builds are functional. Anything stored here is COMPLETELY unsupported and Use-at-your-own-risk!
+### How to get my code
 
-* GH-PAGES BRANCH - This is the "Live" branch. Anything stored on the gh-pages branch is stable, and is currently live to the server. This means that any file stored here is already being displayed on [our URL](www.brennanm.me). These builds are stable and supported, but we do not garuntee full functionality or stability.
+My site **requires** the following is true:
 
-### New here? Here's how to get my code.
+- The server is Appache.
+- The server allows JavaScript / PHP to be sent to the client.
+- The client allows JavaScript (SafeTyJS catch is in place.)
+- The client allows redirects and downloads.
 
-There are several ways to download code from this repository.
+My site **requires these modifications**:
 
-+ **Downloading a release** - This is fairly straightforward. Simply download a pre-archived release of your flavor choice (Windows, Linux, Mac, super-compressed, etc), and then install it onto your computer.
+- The CNAME file *must* be altered.
+- An "ORIGINAL_AUTH.md" file is provided (example is included in project).
+- All images are removed, and all MySQL calls are removed.
 
-+ **Using git (Mac/Linux)** - The preffered way to download my code **FOR NON WINDOWS USERS**. This quick guide will run you through the steps **assuming you are using a MacOSX or Linux machine (my demo Linux Distro is Ubuntu 14.1)**
-```bash
-$ git clone https://github.com/brennan-macaig/mygithubpage.git # Will generate a folder mygithubpage in /Home, will initialize a GIT repository there, and then FETCH this repository.
+Now that I've said all that, here's how to grab my stuff:
+
+* **Git** use this clone URL: ```https://github.com/brennan-macaig/mygithubpage.git```
+
+* **Linux/Mac/Git for Windows** use this command: ```bash $ git clone https://github.com/brennan-macaig/mygithubpage.git </path/to/storage>```
+
+* **GitHub for Mac/Windows** follow instructions provided by this service. I'm not familiar with it enough to provide sufficient instructions.
+
+* **Some Other Method** got another way to do it? Tell me about it!
+
+#### Recommended Development Enviroment
+
+My site is built with the following enviroment:
+
+- **Brackets** lovely text editor for web development. I use the following plugins:
+
+1. Code Folding - allows code folding.
+2. Brackets Git - allows git inside git.
+3. Brackets Icons - adds lovely icons for the file tree.
+4. Brackets Terminal - allows a terminal inside brackets that uses Node.js and tty.js to run.
+5. Emmet.io for Brackets - allows stuff like ``` div#footer>li*4 ``` to expand into valid HTML/CSS
+
+### Project Structure
+
+My repository / project is structured as such:
+
+* GH-PAGES branch: This is the main branch for my repository. Everything is here that you need. The file tree is as such:
 ```
-
-+ **Using git (Windows - NOT RECOMMENDED)** - If you don't know how to use git on Windows, then please don't bother to read this section. I'm assuming that if you're downloading via Windows you already have Git installed, and I will not be going through the steps to install it. Instead, here's your clone URL: `https://github.com/brennan-macaig/mygithubpage.git`
-
-+ **Some other way** - I'm sure there are other ways to do it. If you know of any that you like, please create a pull request! I'll add it right away.
-
-### Copyrights
-
-ALL CODE IN THIS REPOSITORY IS OWNED BY BRENNAN MACAIG AND SANT BANI SCHOOL.
-
-Copyrigth (C) Brennan Macaig and Sant Bani School.
-
-All Rights Reserved
-
-DO NOT DISTRIBUTE!
-
-For information regarding distribution, please *submit a pull request*. This is the easiest way for me to get back to you. Thanks!
-
-### WARNING: This code will destroy your computer.
-
-**_JUST KIDDING! :D_**
-
-Did I get you there?! :D
++gh-pages * BRANCH
+|
++-+assets - assets folder.
+| |
+| +-+css - for CSS folder.
+|   |
+|   +-+front - CSS files only for the INDEX page.
+|   |
+|   +==files - some CSS files are stored here. Most unused.
++-+blogs - Some blogs.
+| |
+| +==files - HTML is available for blogs.
++-+files - Some downloads
+| |
+| +==files - Some files are here.
++-+imgs - Some images are available here.
+| |
+| +==files - Some images are here.
++==files - Main branch. HTML is here. Also jQuery
+```
