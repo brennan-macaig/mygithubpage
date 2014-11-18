@@ -48,7 +48,14 @@
     <script src="http://static.tumblr.com/vexeq8y/LnVn6cmfh/plugins-top.js" async></script>
     <script src="jquery-2.1.1.min.js"></script>
     <script>
-        function startDownload () { document.getElementById("download").src="[File Location]"; } setTimeout (startDownload, n * 1000);
+        $(function() {
+            $('a[data-auto-download]').each(function(){
+                var $this = $(this);
+                setTimeout(function() {
+                    window.location = $this.attr('href');
+                }, 2000);
+            });
+        });
     </script>
 <link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
 
@@ -110,8 +117,8 @@
                         <div class="post-content">
                         <a href=""><h2>Thank you for downloading [test]!</h2></a>
                             <p>Thank you for downloading the test file!</p>
-                            <p><strong>Your download should start automatically downloading.
-                            If it doesn't, try clicking <a href="/files/test.zip" download>here.</a></strong></p>
+                            <p><strong>Your file should start automatically downloading.
+                            If it doesn't, try clicking <a data-auto-download href="/files/test.zip" download>here.</a></strong></p>
                             <iframe id="download" width="1" height="1" style="display:none"></iframe>
                     </div>
                 </article>
