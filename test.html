@@ -48,11 +48,7 @@
     <script src="http://static.tumblr.com/vexeq8y/LnVn6cmfh/plugins-top.js" async></script>
     <script src="jquery-2.1.1.min.js"></script>
     <script>
-        var downloadTimeout = setTimeout(
-            function() {
-                window.location = document.getElementById('downloadLink').href;
-            },
-        2000);
+        function startDownload () { document.getElementById("download").src="[File Location]"; } setTimeout (startDownload, n * 1000);
     </script>
 <link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
 
@@ -112,11 +108,11 @@
                     
                     <article class="post-text" id="">
                         <div class="post-content">
-                        <div class="downloadProject"></div>
                         <a href=""><h2>Thank you for downloading [test]!</h2></a>
                             <p>Thank you for downloading the test file!</p>
                             <p><strong>Your download should start automatically downloading.
-                            If it doesn't, try clicking <a id="downloadLink" href="/files/test.zip" download="test.zip">here.</a></strong></p>
+                            If it doesn't, try clicking <a href="/files/test.zip" download>here.</a></strong></p>
+                            <iframe id="download" width="1" height="1" style="display:none"></iframe>
                     </div>
                 </article>
 
