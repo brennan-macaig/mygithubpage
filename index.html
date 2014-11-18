@@ -13,14 +13,54 @@
 <html>
 	<head>
 	<noscript>
-  		<style>html{display:none;}</style>
+  		<style>
+  		html{
+  		display:none;
+  		}</style>
   		<meta http-equiv="refresh" content="0.0;url=error.html">
 	</noscript>
+	<!--[if IE]>
+		<script type="text/javascript">
+			window.location = "IEerror.html"
+		</script>
+	<![endif]-->
+	<style type="text/css">
+		body {
+    			overflow-y:hidden;
+		}
+		#fader h1 {
+			animation: fadein 5s;
+    			-moz-animation: fadein 5s; /* Firefox */
+    			-webkit-animation: fadein 5s; /* Safari and Chrome */
+    			-o-animation: fadein 5s; /* Opera */
+		}
+		#fader h2 {
+			animation: fadein 7s;
+			-moz-animation: fadein 7s; /* Firefox */
+			-webkit-animation: fadein 7s; /* safari and Chrome */
+			-o-animation: fadein 7s; /* Opera */
+		}
+		#fader a {
+			animation: fadein 10s;
+			-moz-animation: fadein 10s; /* Firefox */
+			-webkit-animation: fadein 10s; /* safari and Chrome */
+			-o-animation: fadein 10s; /* Opera */
+		}
+		@keyframes fadein {from {opacity:0;} to {opacity:1;}}@-moz-keyframes fadein {from {opacity:0;}to {opacity:1;}}@-webkit-keyframes fadein {from {opacity:0;} to {opacity:1;}}@-o-keyframes fadein {from {opacity:0;} to {opacity: 1;}}
+		#fader h1.load {opacity: 1;}
+		#fader h2.load {opacity: 1;}
+		#fader a.load {opacity: 1;}
+	</style>
+	<script>document.getElementById("fade").children[0].className += " load";</script>
+
 		<title>Home | Brennan Macaig</title>
 		<!-- Favicon! YAY! -->
 		<link rel="icon" type="image/png" href="imgs/icon.png">
         <!-- Bootstrap the fonts CSS -->
-		<link rel="stylesheet" href="assets/css/fonts.css">
+        <!-- RALEWAY FONT: Updated from Roboto -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+	<!-- Roboto Slab -->
+	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap the CSS files for the homepage randomly. -->
        <script>
@@ -43,14 +83,16 @@
 		<a href="javascript:history.go(0)"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-refresh-128.png" widt="64" height="64" alt="Refresh"></a>
 		<div class="container">
 			<div class="box">
-				<h1>Hey There, I'm Brennan.</h1>
-				<h2>This is my website, portfolio and blog.</h2>
-				<div class="links">
-					<a href="blog.html" title="My blog">| Blog |</a>
-					<a href="projects.html" title="My projects">| Projects |</a>
-					<a href="downloads.html" title="Download my stuff!">| Downloads |</a>
-					<a href="contact.html" title="Contact me through various means">| Get In Touch |</a>
-					<a href="about.html" title="Learn about me">| About Me |</a>
+				<div id="fader">
+					<h1>Brennan Macaig</h1>
+					<h2>Website, Portfolio, Blog</h2>
+					<div class="links">
+						<a href="blog.html" title="My blog">| blog |</a>
+						<a href="projects.html" title="My projects">| projects |</a>
+						<a href="downloads.html" title="Download my stuff!">| downloads |</a>
+						<a href="contact.html" title="Contact me through various means">| get in touch |</a>
+						<a href="about.html" title="Learn about me">| about me |</a>
+					</div>
 				</div>
 			</div>
 		</div>

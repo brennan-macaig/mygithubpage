@@ -4,7 +4,7 @@ html, body, .do-you-even-flexbox {
    	overflow-x:hidden;
 }body {
     margin:0;
-    font:normal 14px/1.2"Roboto", Helvetica, Arial, sans-serif;
+    font:normal 14px/1.2"Raleway", sans-serif;
     text-align:center;
     background:#111 url('https://c4.staticflickr.com/4/3695/10402545913_1a644e7070_h.jpg') center top/ cover;
 } ::-moz-selection {
@@ -33,15 +33,15 @@ html, body, .do-you-even-flexbox {
     height:20%;
    	margin:auto
 }h1 {
-    font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
+    font-family:"Raleway", sans-serif;
     margin:0;
     color:#000;
     font-weight:400;
     font-size:90px;
 }h2 {
-    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     margin:0;
-	color:#000;
+	color:#fff;
 	font-weight:400;
 	font-size:50px;
 }.social {
