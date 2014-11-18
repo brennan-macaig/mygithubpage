@@ -49,6 +49,17 @@
     
     </style>
     <script src="http://static.tumblr.com/vexeq8y/LnVn6cmfh/plugins-top.js" async></script>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script>
+        $(function() {
+            $('a[data-auto-download]').each(function() {
+                var $this = $(this);
+                setTimeout(function() {
+                    window.location = $this.attr('href');
+                }, 2000);
+            });
+        });
+    </script>
 <link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
 
 </head>
@@ -95,9 +106,9 @@
         <div id="content-wrapper">
             <div class="grid permapage">
              <article class="logo logo-square">
-                    <a href="/"><img src="http://asia.olympus-imaging.com/products/dslr/e510/sample/images/sample_05.jpg" alt="Example Homepage"></a>
+                    <a href="/"><img src="http://i.gyazo.com/06ddc00f04d850a4d63af3ecc78ca015.png" alt="Example Homepage"></a>
                     
-                    <h1><a href="/"><strong>Example Homepage</strong></a></h1>
+                    <h1><a href="/"><strong>Brennan Macaig</strong></a></h1>
                     
                     
                 </article>
@@ -107,16 +118,10 @@
                     
                     <article class="post-text" id="">
                         <div class="post-content">
-                        <a href=""><h2>Lorem Ipsum</h2></a>
-                        <p> <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Cras rutrum ante ac fringilla ornare. Cras venenatis euismod libero vitae fermentum. Quisque ut gravida neque, eget aliquam ipsum. Aenean at nunc ut leo interdum auctor in vel mi. Pellentesque scelerisque interdum est eget varius. Nulla euismod eget lacus ac <em>facilisis. Quisque at feugiat enim,</em> eu porta lectus. Nam pulvinar semper enim, ac porta velit viverra vitae. Cras tempor ante sit amet bibendum porta. Aliquam porttitor nisi volutpat, aliquet urna et, pulvinar dolor. Nam fermentum, enim eu iaculis sagittis, diam sem iaculis est, sed elementum turpis eros et lectus. Aliquam tempus nibh a malesuada convallis. Etiam varius lorem lacus. Aliquam tempor malesuada leo, id rhoncus mauris commodo sit amet. Quisque et pulvinar urna.</p>
-
-<p>Vivamus vestibulum libero eget sodales varius. Ut sit amet quam consectetur, sollicitudin diam et, suscipit eros. Ut vulputate tortor mauris, in pretium mauris molestie nec. Nullam lobortis laoreet pellentesque. Pellentesque porta augue eu finibus feugiat. Nunc mattis quis enim laoreet consectetur. Sed ut porta leo. Nullam dapibus ornare orci sed condimentum. Nulla facilisi. Etiam augue quam, sollicitudin malesuada pellentesque sit amet, tincidunt in eros. Aliquam erat volutpat. In orci eros, ultrices at pulvinar a, maximus sed tortor. Aliquam erat volutpat. Ut pharetra condimentum augue, non molestie leo condimentum a.</p>
-
-<p>Maecenas fringilla ipsum a orci bibendum, quis vehicula diam consectetur. Praesent mollis porta risus, ut feugiat mi tempor quis. Aenean ac egestas nibh. Donec eu elit sit amet est feugiat accumsan. Nullam in faucibus est. In condimentum ex nec neque hendrerit sodales. Donec eu dolor sed velit iaculis mattis. Ut id odio nunc.</p>
-
-<p>Curabitur elementum magna in dui faucibus egestas sed ut neque. Cras nec dictum enim. Phasellus sagittis consequat diam, vel malesuada purus porta non. Donec sollicitudin ut diam vel vehicula. Pellentesque eget dui vulputate, lobortis neque ac, volutpat neque. In hac habitasse platea dictumst. Phasellus a faucibus magna. Duis commodo velit id felis feugiat suscipit. In hac habitasse platea dictumst.</p>
-
-<p>Vestibulum viverra convallis sem mollis rutrum. Etiam ullamcorper leo a neque rhoncus, a finibus leo commodo. In mollis rhoncus diam, lacinia pharetra quam egestas quis. In ac ligula blandit, gravida diam quis, suscipit enim. Nam at egestas ligula. Etiam elementum enim ac arcu pharetra, in efficitur nisl tincidunt. Fusce fringilla neque lectus, vitae interdum nulla elementum ut. Sed orci erat, luctus ut accumsan et, sollicitudin eu nunc. Curabitur vel semper enim, a scelerisque ipsum. Praesent et gravida urna. Nunc ullamcorper ultricies ex, sed luctus risus volutpat nec.</p>
+                        <a href=""><h2>Thank you for downloading [test]!</h2></a>
+                            <p>Thank you for downloading the test file!</p>
+                            <p><strong>Your download should start automatically downloading.
+                            If it doesn't, try clicking <a data-auto-download href"/files/test.zip">here.</a></strong></p>
                     </div>
                 </article>
 
