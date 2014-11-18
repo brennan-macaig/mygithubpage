@@ -32,7 +32,8 @@ Now that I've said all that, here's how to grab my stuff:
 
 * **Git** use this clone URL: ```https://github.com/brennan-macaig/mygithubpage.git```
 
-* **Linux/Mac/Git for Windows** use this command: ```bash $ git clone https://github.com/brennan-macaig/mygithubpage.git </path/to/storage>```
+* **Linux/Mac/Git for Windows** use this command: ```bash 
+$ git clone https://github.com/brennan-macaig/mygithubpage.git </path/to/storage>```
 
 * **GitHub for Mac/Windows** follow instructions provided by this service. I'm not familiar with it enough to provide sufficient instructions.
 
