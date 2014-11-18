@@ -63,7 +63,8 @@ My repository / project is structured as such:
 | +-+css - for CSS folder.
 |   |
 |   +-+front - CSS files only for the INDEX page.
-|   |
+|   | |
+|   | +==files - CSS files for the INDEX page.
 |   +==files - some CSS files are stored here. Most unused.
 +-+blogs - Some blogs.
 | |
