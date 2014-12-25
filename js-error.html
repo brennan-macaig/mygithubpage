@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+
+<!-- 
+	index.html
+	Written by Brennan Macaig
+	Copyright (C) 2014-15 Brennan Macaig and Sant Bani School
+	All rights reserved.
+	See brennanm.me/license.html for more information.
+	!! DO NOT REDISTRIBUTE !!
+-->
+
+<html>
+	<head>
+	<noscript>
+  		<style>
+  		html{
+  		display:none;
+  		}</style>
+  		<meta http-equiv="refresh" content="0.0;url=js-error.html">
+	</noscript>
+	<!--[if IE]>
+		<script type="text/javascript">
+			window.location = "IEerror.html"
+		</script>
+	<![endif]-->
+	<style type="text/css">
+		body {
+    			overflow-y:hidden;
+		}
+		#fader h1 {
+			animation: fadein 5s;
+    			-moz-animation: fadein 5s; /* Firefox */
+    			-webkit-animation: fadein 5s; /* Safari and Chrome */
+    			-o-animation: fadein 5s; /* Opera */
+		}
+		#fader h2 {
+			animation: fadein 7s;
+			-moz-animation: fadein 7s; /* Firefox */
+			-webkit-animation: fadein 7s; /* safari and Chrome */
+			-o-animation: fadein 7s; /* Opera */
+		}
+		#fader a {
+			animation: fadein 10s;
+			-moz-animation: fadein 10s; /* Firefox */
+			-webkit-animation: fadein 10s; /* safari and Chrome */
+			-o-animation: fadein 10s; /* Opera */
+		}
+		@keyframes fadein {from {opacity:0;} to {opacity:1;}}@-moz-keyframes fadein {from {opacity:0;}to {opacity:1;}}@-webkit-keyframes fadein {from {opacity:0;} to {opacity:1;}}@-o-keyframes fadein {from {opacity:0;} to {opacity: 1;}}
+		#fader h1.load {opacity: 1;}
+		#fader h2.load {opacity: 1;}
+		#fader a.load {opacity: 1;}
+	</style>
+	<script>document.getElementById("fade").children[0].className += " load";</script>
+
+		<title>Home | Brennan Macaig</title>
+		<!-- Favicon! YAY! -->
+		<link rel="icon" type="image/png" href="imgs/icon.png">
+        <!-- Bootstrap the fonts CSS -->
+        <!-- RALEWAY FONT: Updated from Roboto -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+	<!-- Roboto Slab -->
+	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap the CSS files for the homepage randomly. -->
+       <script>
+		function chooseStyle() {
+ 			var css = new Array('index', 'index_one', 'index_two','index_three', 'index_four', 'index_five');
+  			var i = Math.floor(Math.random()*css.length);
+  			var style = "assets/css/front/"+css[i]+".css";
+  
+  			return style;
+		}
+		document.write('<link rel="stylesheet" href="'+chooseStyle()+'" type="text/css">');
+	</script>
+	<link rel="stylesheet" href="assets/css/error.css" type="text/css">
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-57389055-1', 'auto');
+  ga('send', 'pageview');
+</script>
+	<meta name="description" content="Brennan Macaig's independent study site.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+		<i class="do-you-even-flexbox"></i>
+		<a href="javascript:history.go(0)"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-refresh-128.png" widt="64" height="64" alt="Refresh"></a>
+		<div class="container">
+			<div class="box">
+				<div id="fader">
+					<h1>Brennan Macaig</h1>
+					<h2>Website, Portfolio, Blog</h2>
+					<div class="links">
+						<a href="blog.html" title="My blog">| blog |</a>
+						<a href="projects.html" title="My projects">| projects |</a>
+						<a href="downloads.html" title="Download my stuff!">| downloads |</a>
+						<a href="contact.html" title="Contact me through various means">| get in touch |</a>
+						<a href="about.html" title="Learn about me">| about me |</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
