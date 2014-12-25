@@ -35,13 +35,13 @@ html, body, .do-you-even-flexbox {
 }h1 {
     font-family:"Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
-    color:#fff;
+    color:#000;
     font-weight:400;
     font-size:90px;
 }h2 {
     font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
     margin:0;
-	color:#fff;
+	color:#000;
 	font-weight:400;
 	font-size:50px;
 }.social {
@@ -71,13 +71,13 @@ html, body, .do-you-even-flexbox {
 }.links a {
     display:inline-block;
     padding:0 5px;
-    color:#fff;
+    color:#000;
 	font-size:20px;
 }.links {
     color:#fff;
     font-size:20px;
 }.links a:hover {
-    color:#fff;
+    color:#000;
     font-size:20px;
 }
 @media (max-width: 660px) {
