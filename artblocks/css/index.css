@@ -10,7 +10,7 @@ html {
     width: 100%;
 } body {
     /* Perfectly Centering Image */
-    background: url("http://i.imgur.com/VQPJDbU.png") no-repeat center center fixed;
+    background: url("http://i.imgur.com/VQPJDbU.png") no-repeat top center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
