@@ -1,0 +1,54 @@
+/* Index CSS file.
+   Created by Brennan Macaig.
+   Copyright (C) 2015 Brennan Macaig and Sant Bani School
+   All rights reserved.
+*/
+
+html {
+    /* Main Rule */
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* Perfectly Centering Image */
+    background: url("http://i.imgur.com/VQPJDbU.png") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* -- END PERFECT CENTER -- */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    /* Header Div */
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Roboto Slab', serif;
+}
+.center-head {
+    margin: auto;
+}
+
+#content {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin:auto;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+p {
+    font-size: 25px;
+}
+
