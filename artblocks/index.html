@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <!--
@@ -23,41 +24,32 @@
         <!-- Raleway Font for Text -->
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         
-        <link rel='stylesheet' type='text/css' href="css/index.css">\
+        <link rel='stylesheet' type='text/css' href="css/index.css">
+        
+        <!-- Menu Bar Stuff -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
     
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-            $(function(){
-                // Check the initial Poistion of the Sticky Header
-                var stickyHeaderTop = $('#stickyheader').offset().top;
- 
-                $(window).scroll(function(){
-                    if( $(window).scrollTop() > stickyHeaderTop ) {
-                            $('#stickyheader').css({position: 'fixed', top: '0px'});
-                            $('#stickyalias').css('display', 'block');
-                    } else {
-                            $('#stickyheader').css({position: 'static', top: '0px'});
-                            $('#stickyalias').css('display', 'none');
-                    }
-                });
-            });
-        </script>
     </head>
     
     <body>
-        <div id="stickyheader">
-            <table width="100%">
-                <tr>
-                    <td><a href="http://brennanm.me/">Brennan</a></td>
-                    <td><a href="index.html">Home</a></td>
-                    <td><a href="assignments.html">Assignments</a></td>
-                    <td><a href="portfolios.html">Portfolio's</a></td>
-                    <td><a href="about.html">Artblock</a></td>
-                </tr>
-            </table>
-        </div>
         <div id="header" class="bigtext">Artblocks 2014 Set 3 - Intro</div>
         <div id="content" class="center-body">
+           <div class="container">
+            
+                <nav id="bt-menu" class="bt-menu">
+                    <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+					    <li><a href="portfolios.html">Portfolios</a></li>
+				    	<li><a href="assignments.html">Assignments</a></li>
+                        <li><a href="about.html">Artblock</a></li>
+                        <li><a href="/">Brennan</a></li>
+                    </ul>
+                </nav>
+            </div>
             <article>
             <h2>Welcome!</h2>
 
@@ -122,4 +114,6 @@
             
         </div>
     </body>
+    <script src="js/classie.js"></script>
+	<script src="js/borderMenu.js"></script>
 </html>
