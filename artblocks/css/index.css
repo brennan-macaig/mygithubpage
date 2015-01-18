@@ -221,17 +221,17 @@ html {
 	transform: scale(0);
 }
 
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:first-child { 
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:first-child {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
 
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(2) { 
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(2) {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
 
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(3) { 
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(3) {
 	-webkit-transition-delay: 0.3s;
 	transition-delay: 0.3s;
 }
