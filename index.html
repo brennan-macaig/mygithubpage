@@ -50,6 +50,9 @@
 		#fader h1.load {opacity: 1;}
 		#fader h2.load {opacity: 1;}
 		#fader a.load {opacity: 1;}
+		#yt-music, audio {position:absolute; left:-9999px;}
+		audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
 	</style>
 	<script>document.getElementById("fade").children[0].className += " load";</script>
 
@@ -89,6 +92,11 @@
 
 	</head>
 	<body>
+		<iframe id="yt-music" width="2" height="2" src="http://www.youtube.com/embed/_SJIMD0DDJ8?rel=0&autoplay=0&loop=1" frameborder="0" allowfullscreen></iframe>
+		<audio id="html-music" loop preload="auto">
+			<source src="https://s3.amazonaws.com/thequietplace/media/music.ogg" type="audio/ogg">
+			<source src="https://s3.amazonaws.com/thequietplace/media/music.mp3" type="audio/mpeg">
+		</audio>
 		<i class="do-you-even-flexbox"></i>
 		<a href="javascript:history.go(0)"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-refresh-128.png" widt="64" height="64" alt="Refresh"></a>
 		<div class="container">
