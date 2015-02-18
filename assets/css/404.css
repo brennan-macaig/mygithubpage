@@ -13,12 +13,14 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-size: 100px;
     font-family: 'Lato', sans-serif;
     color: #000;
     text-align: center;
 }
 h2 {
+    text-align: center;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     color: #000;
@@ -27,6 +29,9 @@ p {
     font-size 10px;
     font-family: 'Lato', sans-serif;
     color: #000;
+}
+.hide {
+    display: none;
 }
 .outer {
     position: relative;
