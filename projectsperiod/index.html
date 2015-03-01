@@ -1,0 +1,1832 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<!-- Built with love and code from Kickstarter -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script type="text/javascript" async="" src="https://cdn.mxpnl.com/libs/mixpanel-2.2.min.js">
+</script>
+
+<style type="text/css">
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FROM KICKSTARTER - CSS - altered */ 
+body,h1,h2,h3,h4,h5,h6,dl,ol,ul,p,button,input,select,textarea {
+  margin:0
+}
+
+button,input,select,textarea {
+  font-family:inherit;
+  font-size:100%
+}
+
+article,aside,details,figcaption,figure,footer,header,main,nav,section,summary {
+  display:block;
+}
+
+body {
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height:1.25;
+  font-weight:400;
+}
+
+strong,.bold {
+  font-weight:bold;
+}
+
+.regular {
+  font-weight:normal;
+}
+
+.caps {
+  text-transform:uppercase;
+}
+
+.center {
+  text-align:center;
+}
+
+.right-align {
+  text-align:right;
+}
+
+.m1 {
+  margin:10px;
+}
+
+.mt1 {
+  margin-top:10px;
+}
+
+.mr1 {
+  margin-right:10px !important;
+}
+
+.mb1 {
+  margin-bottom:10px;
+}
+
+.ml1 {
+  margin-left:10px;
+}
+
+.m2 {
+  margin:20px;
+}
+
+.mt2 {
+  margin-top:20px;
+}
+
+.mr2 {
+  margin-right:20px;
+}
+
+.mb2 {
+  margin-bottom:20px;
+}
+
+.ml2 {
+  margin-left:20px;
+}
+
+.m3 {
+  margin:40px;
+}
+
+.mt3 {
+  margin-top:40px;
+}
+
+.mr3 {
+  margin-right:40px;
+}
+
+.mb3 {
+  margin-bottom:40px;
+}
+
+.ml3 {
+  margin-left:40px
+}
+
+.m4 { 
+  margin:60px;
+}
+
+.mt4 {
+  margin-top:60px;
+}
+
+.mr4 {
+  margin-right:60px;
+}
+
+.mb4 {
+  margin-bottom:60px;
+}
+
+.ml4 {
+  margin-left:60px;
+}
+
+.p1 {
+  padding:10px;
+}
+
+.px1 {
+  padding-right:10px;
+  padding-left:10px;
+}
+
+.py1 {
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.p2 {
+  padding:20px;
+}
+
+.px2 {
+  padding-right:20px;
+  padding-left:20px;
+}
+
+.py2 {
+  padding-top:20px;
+  padding-bottom:20px
+}
+
+.p3 {
+  padding:40px;
+}
+
+.px3 {
+  padding-right:40px;
+  padding-left:40px;
+}
+
+.py3 {
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.p4 {
+  padding:60px;
+}
+
+.px4 {
+  padding-right:60px;
+  padding-left:60px;
+}
+
+.py4 {
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+.inline {
+  display:inline;
+}
+
+.block {
+  display:block;
+}
+
+.inline-block {
+  display:inline-block;}
+
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
+.helvetica-condensed {
+  font-family:HelveticaNeueLTPro-BlkCn, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight:normal;
+}
+
+h1,p {
+  margin:0;
+}
+
+p {
+  line-height:1.25;
+  -webkit-font-smoothing:antialiased;
+  color:#fff !important;
+}
+
+.lh5 {
+  line-height:50px;
+}
+
+.h0r {
+  font-size:25px;
+  line-height:.9;
+  -webkit-font-smoothing:antialiased;
+}
+
+@media (min-width: 768px) {
+  .h0r {
+    font-size:4rem
+  }
+}
+
+@media (min-width: 1152px) {
+  .h0r {
+    font-size:6rem
+  }
+}
+
+@media (min-width: 1536px) {
+  .h0r {
+    font-size:8rem
+  }
+}
+
+.thirteen-wrap {
+  width:256px;
+  height:256px;
+}
+
+.thirteen-wrap svg {
+  width:100%;
+  height:100%;
+}
+
+@media (min-width: 768px) {
+  .thirteen-wrap {
+    width:512px;
+    height:512px
+  }
+}
+
+@media (min-width: 1152px) {
+  .thirteen-wrap {
+    width:768px;
+    height:768px
+  }
+}
+
+@media (min-width: 1536px) {
+  .thirteen-wrap {
+    width:800px;
+    height:800px
+  }
+}
+
+.h1r {
+  font-size:1.5rem;
+  line-height:1.125;
+  -webkit-font-smoothing:antialiased;}
+
+@media (min-width: 768px) {
+  .h1r {
+    font-size:2rem;
+    line-height:1
+  }
+}
+
+@media (min-width: 1152px) {
+  .h1r {
+    font-size:3rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .h1r {
+    font-size:4rem;
+  }
+}
+
+.h2 {
+  font-size:1.5rem;
+  -webkit-font-smoothing:antialiased;
+}
+
+.h3 {
+  font-size:1.25rem;
+  -webkit-font-smoothing:antialiased;
+}
+
+.h3r {
+  font-size:1.25rem;
+}
+
+@media (min-width: 768px) {
+  .h3r {
+    font-size:1.5rem;
+  }
+}
+
+@media (min-width: 1152px) {
+  .h3r {
+    font-size:2rem;
+  }
+}
+
+.small {
+  font-size:.75rem;
+}
+
+.right-align {
+  text-align:right;
+}
+
+.slideshow {
+  width:100%;
+  height:100%;
+  white-space:nowrap;
+  font-size:0;
+}
+
+.slideshow .slide {
+  position:relative;
+  overflow:hidden;
+  display:inline-block;
+  width:100%;
+  height:100%;
+  white-space:normal;
+  font-size:1rem;
+  vertical-align:top;
+}
+
+.shifty {
+  overflow:hidden;
+  height:100%;
+}
+
+.shifty .shifty-inner {
+  height:200%;
+  position:relative;
+  -webkit-transition:top 0.3s ease;
+  -moz-transition:top 0.3s ease;
+  transition:top 0.3s ease;
+}
+
+.shifty .shifty-content {
+  position:relative;
+  height:50%;
+  background-color:#036;
+}
+
+.shifty .shifty-menu {
+  height:50%;
+}
+
+.shifty.show-menu .shifty-inner,.shifty:target .shifty-inner {
+  top:-100%;
+}
+
+.bg-video-wrap {
+  position:relative;
+  top:50%;
+  width:100%;
+  height:100%;
+  min-width:1920px;
+  min-height:1080px;
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  transform:translateZ(0);
+}
+
+.bg-video-wrap video {
+  min-width:100%;
+  min-height:100%;
+  position:relative;
+  top:-50%;
+}
+
+.bg-video-wrap.bg-video-center {
+  right:-50%;
+}
+
+.bg-video-wrap.bg-video-center video {
+  left:-50%;
+}
+
+.bg-video-wrap.bg-video-left {
+  left:0;
+}
+
+.bg-video-wrap.bg-video-left video {
+  left:0;
+}
+
+.bg-video-wrap.bg-video-right {
+  right:0;
+  float:right;
+}
+
+.bg-video-wrap.bg-video-right video {
+  right:0;
+}
+
+.bg-video-wrap.bg-video-bottom {
+  position:absolute;
+  top:auto;
+  bottom:0;
+}
+
+.bg-video-wrap.bg-video-bottom video {
+  top:auto;
+  bottom:0;
+}
+
+.bg-video-wrap.bg-video-top {
+  position:absolute;
+  top:0;
+  bottom:0;
+}
+
+.bg-video-wrap.bg-video-top video {
+  top:0;
+  bottom:auto;
+}
+
+body {
+ min-width:320px;
+}
+
+.view {
+  position:absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+}
+
+@media (max-width: 960px) {
+    .view {
+        height: 100% !important;
+    }
+}
+
+.scrolly {
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+.navbar {
+  position:absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  padding:10px;
+  line-height:30px;
+}
+
+.navbar-left,.navbar-right {
+  width:80px;
+}
+
+@media (min-width: 768px) {
+  .navbar-left,.navbar-right {
+    width:160px;
+  }
+}
+
+.rail {
+  position:absolute;
+  top:15%;
+  bottom:15%;
+  height:70%;
+  display:table;
+}
+
+.rail .middle {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.rail-left {
+  left:10px;
+}
+
+.rail-right {
+  right:10px;
+}
+
+.y100 {
+  height:100%;
+}
+
+.slide-footer {
+  position:absolute;
+  right:0;
+  bottom:40px;
+  left:0;
+  padding:20px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  transform:translateZ(0);
+}
+
+@media (min-height: 550px) {
+  .slide-footer {
+    bottom:175px !important;
+    height:40px;
+    line-height:40px;
+  }
+}
+
+@media (min-height: 960px) {
+  .slide-footer {
+    bottom:225px !important;
+  }
+}
+
+@media (max-height: 720px) {
+  .kickstarter-bug {
+    display: none!important;
+  }
+}
+
+.mobile-show {
+  display:none;
+}
+
+@media (max-width: 768px) {
+  .mobile-show {
+    display:block;
+  }
+  .mobile-hide {
+    display:none;
+  }
+}
+
+.list-simple {
+  list-style:none;
+  padding-left:0;
+}
+
+.clickable {
+  cursor:pointer;
+}
+
+.no-select {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+}
+
+.hide {
+  display:none;
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+  body,.view {
+    min-height:320px;
+  }
+}
+
+.tz0 {
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  transform:translateZ(0);
+}
+
+.btn {
+  border:none;
+  outline:none;
+  cursor:pointer;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+  display:inline-block;
+  height:30px;
+  line-height:30px;
+  padding:0 10px;
+  border-radius:6px;
+  -webkit-font-smoothing:antialiased;
+}
+.btn label {
+  cursor:pointer;
+}
+.btn:hover {
+  background: #1e65ab;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .btnr {
+    font-size:1.25rem;
+    height:40px;
+    line-height:40px;
+    padding:0 15px;
+  }
+}
+
+.relative {
+  position:relative;
+}
+
+.absolute {
+  position:absolute;
+}
+
+.t0 {
+  bottom:115px;
+}
+
+.r0 {
+  right:0;
+}
+
+.b0 {
+  bottom:0;
+}
+
+.l0 {
+  left:0;
+}
+
+.z2 {
+  z-index:2;
+}
+
+.absolute-fill {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  padding: 125px;
+}
+
+.table {
+  display:table;
+  width:100%;
+}
+
+.table-fixed {
+  table-layout:fixed;
+}
+
+.table-cell {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.box {
+  position:absolute;
+  right:5%;
+  left:5%;
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  transform:translateZ(0);
+}
+
+.box-centered {
+  display:table;
+  width:90%;
+  top:0;
+  bottom:0;
+  height:100%;
+}
+
+.box-bottom {
+  bottom:120px;
+}
+
+.box-bottom-low {
+  bottom:120px;
+}
+
+@media (min-height: 550px) {
+  .box-bottom {
+    bottom:215px;
+  }
+  .box-bottom-low {
+    bottom:140px;
+  }
+}
+
+@media (min-height: 960px) {
+  .box-bottom {
+    bottom:250px;
+  }
+}
+
+a {
+  color:#fff;
+  text-decoration:none;
+}
+
+.white {
+  color:#fff;
+}
+
+.black {
+    color: #000;
+}
+
+.bg-white {
+  background-color:#fff;
+}
+
+.bg-black {
+  background-color:#000;
+}
+
+.dark-green {
+  color:#28390a;
+}
+
+.bg-dynamic,.bg-dynamic-a {
+  transition:background-color 0.3s linear !important;
+}
+
+.bg-cover {
+  background-size:cover;
+  background-position:center;
+}
+
+.bg-cover-top {
+  background-position:top center;
+}
+
+.bg-cover-bottom {
+  background-position:bottom center;
+}
+
+.green1 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green1 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green1 {
+  color:#777;
+}
+
+.link-green1:hover {
+  color:#369;
+}
+
+.green2 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green2 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green2 {
+  color:#777;
+}
+
+.link-green2:hover {
+  color:#369;
+}
+
+.green3 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green3 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green3 {
+  color:#777;
+}
+
+.link-green3:hover {
+  color:#369;
+}
+
+.green4 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green4 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green4 {
+  color:#777;
+}
+
+.link-green4:hover {
+  color:#369;
+}
+
+.green5 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green5 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green5 {
+  color:#777;
+}
+
+.link-green5:hover {
+  color:#369;
+}
+
+.green6 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green6 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green6 {
+  color:#777;
+}
+
+.link-green6:hover {
+  color:#369;
+}
+
+.green7 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green7 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green7 {
+  color:#777;
+}
+
+.link-green7:hover {
+  color:#369;
+}
+
+.green8 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green8 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green8 {
+  color:#777;
+}
+
+.link-green8:hover {
+  color:#369;
+}
+
+.green9 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green9 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green9 {
+  color:#777;
+}
+
+.link-green9:hover {
+  color:#369;
+}
+
+.green10 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green10 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green10 {
+  color:#777;
+}
+
+.link-green10:hover {
+  color:#369;
+}
+
+.green11 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green11 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green11 {
+  color:#777;
+}
+
+.link-green11:hover {
+  color:#369;
+}
+
+.green12 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green12 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green12 {
+  color:#777;
+}
+
+.link-green12:hover {
+  color:#369;
+}
+
+.green13 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green13 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green13 {
+  color:#777;
+}
+
+.link-green13:hover {
+  color:#369;
+}
+
+.green14 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green14 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green14 {
+  color:#777;
+}
+
+.link-green14:hover {
+  color:#369;
+}
+
+.green15 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green15 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green15 {
+  color:#777;
+}
+
+.link-green15:hover {
+  color:#369;
+}
+
+.green16 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green16 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green16 {
+  color:#777
+}
+
+.link-green16:hover {
+  color:#369;
+}
+
+.green17 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green17 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green17 {
+  color:#777;
+}
+
+.link-green17:hover {
+  color:#369;
+}
+
+.green18 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green18 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green18 {
+  color:#777;
+}
+
+.link-green18:hover {
+  color:#369;
+}
+
+.green19 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green19 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green19 {
+  color:#777;
+}
+
+.link-green19:hover {
+  color:#369;
+}
+
+.green20 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green20 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green20 {
+  color:#777;
+}
+
+.link-green20:hover {
+  color:#369;
+}
+
+.green21 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green21 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green21 {
+  color:#777;
+}
+
+.link-green21:hover {
+  color:#369;
+}
+
+.green22 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green22 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green22 {
+  color:#777;
+}
+
+.link-green22:hover {
+  color:#369;
+}
+
+.green23 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green23 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green23 {
+  color:#777;
+}
+
+.link-green23:hover {
+  color:#369;
+}
+
+.green24 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green24 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green24 {
+  color:#777;
+}
+
+.link-green24:hover {
+  color:#369;
+}
+
+.green25 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green25 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green25 {
+  color:#777;
+}
+
+.link-green25:hover {
+  color:#369;
+}
+
+.green26 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green26 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green26 {
+  color:#777;
+}
+
+.link-green26:hover {
+  color:#369;
+}
+
+.green27 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green27 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green27 {
+  color:#777;
+}
+
+.link-green27:hover {
+  color:#369;
+}
+
+.green28 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green28 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green28 {
+  color:#777;
+}
+
+.link-green28:hover {
+  color:#02dbb2;
+}
+
+.green29 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green29 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green29 {
+  color:#777;
+}
+
+.link-green29:hover {
+  color:#03d6ae;
+}
+
+.green30 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green30 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green30 {
+  color:#777;
+}
+
+.link-green30:hover {
+  color:#03d3ab;
+}
+
+.green31 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green31 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green31 {
+ color:#777;
+}
+
+.link-green31:hover {
+  color:#369;
+}
+
+.green32 .bg-dynamic {
+  background-color:#369 !important;
+}
+
+.green32 .bg-dynamic-a {
+  background-color:#036 !important;
+}
+
+.link-green32 {
+  color:#777;
+}
+
+.link-green32:hover {
+  color:#369;
+}
+
+@-webkit-keyframes fill-color-fade {
+  0% {
+    fill:#49f8ae
+  }
+  50% {
+    fill:#02dbb2;
+  }
+  100% {
+    fill:#49f8ae;
+  }
+}
+
+@-moz-keyframes fill-color-fade {
+  0% {
+    fill:#49f8ae;
+  }
+  50% {
+    fill:#02dbb2;
+  }
+  100% {
+    fill:#49f8ae;
+  }
+}
+
+@-ms-keyframes fill-color-fade {
+  0% {
+    fill:#49f8ae;
+  }
+  50% {
+    fill:#02dbb2;
+  }
+  100% {
+    fill:#49f8ae;
+  }
+}
+
+@keyframes fill-color-fade {
+ 0% {
+    fill:#49f8ae;
+  }
+  50% {
+    fill:#02dbb2;
+  }
+  100% {
+    fill:#49f8ae;
+  }
+}
+
+.fill-thirteen {
+  fill:#336699;
+  -webkit-transition:fill;
+  -moz-transition:fill;
+  transition:fill;
+  -webkit-animation:fill-color-fade 5s linear infinite;
+  -moz-animation:fill-color-fade 5s linear infinite;
+  animation:fill-color-fade 5s linear infinite;
+}
+
+.input {
+  box-sizing:border-box;
+  padding:.25rem .75rem;
+  height:30px;
+  line-height:30px;
+  border-radius:.25rem;
+  border:none;
+}
+
+.input:focus {
+  outline:none;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    transform:scale(0.8);
+    opacity:.6;
+  }
+  to {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  from {
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    transform:scale(0.8);
+    opacity:.6;
+  }
+  to {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fade-in {
+  from {
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    transform:scale(0.8);
+    opacity:.6;
+  }
+  to {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    transform:scale(0.8);
+    opacity:.6;
+  }
+  to {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.fade-in {
+  -webkit-animation:fade-in 0.8s ease;
+  -moz-animation:fade-in 0.8s ease;
+  animation:fade-in 0.8s ease;
+}
+
+
+/* HIDE FOOTER */ 
+div#footer {
+  display: none;
+}
+</style>
+  <meta charset="utf-8">
+  <title>Projects Period 2015 | Brennan Macaig</title>
+  <link rel="icon" type="image/png" href="/imgs/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="twentythirteen" class="green31">
+
+  <div class="view bg-dynamic">
+    <div id="menu" class="shifty">
+      <div class="shifty-inner">
+        <div class="shifty-content">
+          <div class="slideshow no-select" style="transition: transform 0ms cubic-bezier(0, 0, 0.25, 1); -webkit-transition: transform 0ms cubic-bezier(0, 0, 0.25, 1); transform: translate3d(0px, 0px, 0px); left: 0px; margin-left: 0px;">
+            <div id="start" class="slide center" data-color="green32">
+              <div class="relative table center y100 white">
+                <div class="table-cell">
+                  <h1 class="h0r" style="font-family:Georgia;letter-spacing: 0.08em;">
+                    3D Design<br>
+                    And Animation<br>
+                    By Brennan Macaig
+                  </h1>
+                </div>
+              </div>
+              <div class="slide-footer mobile-show white">
+                <p>Swipe to start <i class="fa fa-angle-right fa-fw"></i></p>
+              </div>
+            </div>
+            <div id="slide-one" class="slide bg-cover bg-cover-top" style="background-image: url(http://www.gtmmobilesreviews.com/wp-content/uploads/2013/04/dictionary.jpg)" data-color="green31">
+              <div class="table y100">
+                <div class="table-cell px2 center">
+                  <p class="h1r">
+                       <font color="black">
+                        Lets Get the boring stuff out of the way.<br class="mobile-hide">
+                        Terms and Definitions<br class="mobile-hide">
+                         <span class="bold">Trust me, it gets better.</span>
+                      </font>
+                  </p>
+                </div>
+              </div>
+            </div>
+           <div id="slide-two" class="slide bg-cover bg-cover-top white" style="background-image: url(img/rainy.png)" data-color="green28">
+              <div class="table y100">
+                <div class="table-cell px2 center">
+                  <p class="h1r">
+                    I decided to start with a harder project.<br class="mobile-hide">
+                    You can see the result here.
+                  </p>
+            </div>
+           </div>
+          </div>
+            <div id="4th" class="slide white" data-color="green28">
+              <div class="table center y100">
+                <div class="table-cell px2">
+                  <p class="h1r">
+                   <span class="bold">That was probably a bad idea.</span><br class="mobile-hide"><br class="mobile-hide">Next I did a lot of research, and then decided to go simple.<br class="mobile-hide">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="denis" class="slide white" data-color="green27">
+              <p class="h1r box box-bottom center">
+                <div class="video-container">
+                <iframe width="420" height="315" src="http://www.youtube-nocookie.com/embed/h9JXyN8r5Nk?version=3&amp;showinfo=0&amp;hl=en_US" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+              <div class="slide-footer">
+                <span style="font-size: 24px;">Here's a recording I made of me working.</span><br/>
+                <a href="http://www.youtube.com/watch?v=h9JXyN8r5Nk" target="_blank">Watch on YouTube</a>
+              </div>
+            </div>
+            <div id="jobs1" class="slide bg-cover bg-cover-top white" style="background-image: url(/sites/default/files/image/jobs_chart6_slidebg.jpg)" data-color="green26">
+              <p class="h1r box box-bottom center">
+                America has added 10.9 million jobs <br class="mobile-hide">over the past 57 months in a row, <br class="mobile-hide">extending the longest streak of private-sector job growth on record.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/12/05/employment-situation-november" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="jobs2" class="slide bg-cover bg-cover-top white" style="background-image: url(/sites/default/files/image/jobs_2_slidebg.jpg)" data-color="green26">
+              <p class="h1r box box-bottom center">
+                In the first 11 months of 2014, businesses have already added 2.65 million jobs, making 2014 the strongest year for job growth since the 1990s.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/12/05/employment-situation-november" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="aca" class="slide bg-cover bg-cover-top white" style="background-image: url(/sites/default/files/image/aca_01_slidebg.jpg)" data-color="green25" >
+              <p class="h1r box box-bottom center">
+                Thanks to the Affordable Care Act, about 10 million Americans gained health insurance — and the uninsured rate hit a near-record low. 
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/12/18/2014-has-seen-largest-coverage-gains-four-decades-putting-uninsured-rate-or-near-his" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="communities" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/communities_03_slidebg.jpg)" data-color="green24">
+              <p class="h1r box box-bottom center">
+                &#8220;These are real issues. And we have to lift them up and not deny them or try to tamp them down. What we need to do is to understand them and figure out how do we make more progress. And that can be done.&#8221;<br/><span style="font-size:24px;">President Obama, November 24</span>
+              </p>
+              <div class="slide-footer">
+                <a href="http://www.whitehouse.gov/blog/2014/12/01/building-trust-between-communities-and-local-police " target="_blank">Learn more about the President's steps to build trust between communities and local police.</a>
+              </div>
+            </div>
+            <div id="carbon1" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/carbon1_02_slidebg.jpg)" data-color="green23">
+              <p class="h1r box box-bottom center">
+                The President took historic steps to cut carbon pollution in America…
+              </p>
+              <div class="slide-footer">
+                <a href="http://www.whitehouse.gov/climate-change#section-cutting-carbon-pollution" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="carbon2" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/carbon2_02_slidebg.jpg)" data-color="green23">
+              <p class="h1r box box-bottom center">
+                 … and around the world.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/11/12/us-and-china-just-announced-important-new-actions-reduce-carbon-pollution" target="_blank">Learn More</a>
+              </div>
+            </div>
+           <div id="immigration" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/immigration_01_slidebg.jpg)" data-color="green22">
+              <p class="h1r box box-bottom center">
+                &#8220;We were strangers once, too.&#8221;<br/><span style="font-size:24px;">President Obama, November 20, speaking on his immigration action to bring millions out of the shadows.</span>
+              </p>
+              <div class="slide-footer">
+                <a href="/issues/immigration/immigration-action" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="net" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/net_02_slidebg.jpg)" data-color="green21" >
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                The President took action to <br class="mobile-hide">
+                         <span class="bold">keep the Internet open and free.</span>
+              </p>
+              <div class="slide-footer">
+                <a href="/net-neutrality" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="americaleads1" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/al_mapafrica4.jpg)" data-color="green20">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                America took the lead in confronting the world’s most pressing challenges, from the fight on the frontlines of the Ebola outbreak in West Africa…
+              </p>
+              <div class="slide-footer">
+                <a href="/ebola-response" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="americaleads2" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/al_middleeast4.jpg)" data-color="green20" >
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                and the mission to degrade and destroy ISIL…
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/09/10/president-obama-we-will-degrade-and-ultimately-destroy-isil" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="americaleads3" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/al_ukraine4.jpg)" data-color="green20" >
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                to checking Russia’s aggression in Ukraine…
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/07/29/president-obama-russia-once-again-isolating-itself-international-community" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="americaleads4" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/al_cubamap4.jpg)" data-color="green20">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                and charting a new course in Cuba <br class="mobile-hide"><span class="bold">after more than 50 years</span> <br class="mobile-hide">of a failing policy.
+              </p>
+              <div class="slide-footer">
+                <a href="/cuba-policy" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="americaleads5" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/al_afghanistanmap4.jpg)" data-color="green20">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                The President brought a responsible end <br class="mobile-hide">to America’s longest war in Afghanistan.
+              </p>
+              <div class="slide-footer">
+                <a href="http://www.whitehouse.gov/blog/2014/12/15/president-obama-thanks-americas-troops-and-marks-milestone-afghanistan-war" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="code" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/code_01_slidebg.jpg)" data-color="green19">
+              <p class="h1r box box-bottom center">
+               President Obama became <br class="mobile-hide"><span class="bold">the first President to write a line of code</span>.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/12/10/president-obama-first-president-write-line-code" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="3d" class="slide bg-cover bg-center white" data-color="green18" data-mp4="http://www.whitehouse.gov/videos/2014/December/3D1.mp4" url(/sites/default/files/image/3dpotus.jpg)">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                The President was 3D-printed.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/12/02/new-video-provides-behind-scenes-look-first-3d-printed-presidential-portraits" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="ferns" class="slide bg-cover bg-center white" data-color="green17" data-mp4="http://www.whitehouse.gov/videos/2014/December/2ferns1.mp4" url(/sites/default/files/image/potus2ferns.jpg)">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                The President sat between two ferns with Zach Galifianakis to talk about health care… among other things.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/03/11/watch-president-obama-between-two-ferns-zach-galifianakis" target="_blank">Learn More</a>
+              </div>
+            </div>
+           <div id="roam" class="slide bg-cover bg-center white" data-color="green16" data-mp4="http://www.whitehouse.gov/videos/2014/December/POTUSWalk1.mp4" url(/sites/default/files/image/potuswalk.jpg)">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <p class="h1r box box-bottom center">
+                The President took a surprise walk <br class="mobile-hide">to the nearby Interior Department <br class="mobile-hide">and talked with folks on the way.
+              </p>
+              <div class="slide-footer">
+                <a href="/share/raw-video-president-takes-surprise-walk" target="_blank">Learn More</a>
+              </div>
+             </div>
+            <div id="notalone" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/notalone_03_slidebg.jpg)" data-color="green15">
+              <div class="bg-video-wrap bg-video-bottom"></div>
+              <p class="h1r box box-bottom center">
+                The Administration took steps to<br class="mobile-hide"> prevent domestic violence and sexual assault<br class="mobile-hide"> on college campuses.
+              </p>
+              <div class="slide-footer">
+                <a href="http://www.notalone.gov" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="grad" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/graduation.jpg)" data-color="green14">
+              <p class="h1r box box-bottom center">
+                America’s high school graduation rate is the highest it's ever been, and more students are earning post-secondary degrees than ever before.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/09/12/chart-week-more-students-are-graduating-high-school-ever" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="minwage" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/minimumwage.jpg)" data-color="green13">
+              <p class="h1r box box-bottom center">
+                The President called for states<br class="mobile-hide"> and businesses to lift their minimum wages. <br class="mobile-hide"><br class="mobile-hide"><span class="bold">And millions of hardworking Americans will get a raise.</span>
+              </p>
+              <div class="slide-footer">
+                <a href="/raise-the-wage" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="petitions" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/petitions_02_slidebg.jpg)" data-color="green12">
+              <p class="h1r box box-bottom center">
+                The President signed a bill into law that made it legal for people to unlock their cell phones. <br class="mobile-hide"><span class="bold">It was the first time a <a href="https://petitions.whitehouse.gov" target="_blank" style="color:#fff;">We the People</a> petition prompted legislation.</span>
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/08/15/heres-how-cell-phone-unlocking-became-legal" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="tumblr" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/tumblrbump_1200_0_0.gif)" data-color="green11">
+              <div class="box box-bottom center">
+                <p class="h1r">
+                The President took to Tumblr to respond to people's questions about education.
+                </p>
+              </div>
+              <div class="slide-footer">
+                <a href="/blog/2014/06/10/case-you-missed-it-presidents-very-first-tumblr-qa" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="vets" class="slide bg-cover bg-center white" style="background-image: url(/sites/default/files/image/vets_03_slidebg.jpg)" data-color="green12">
+              <div class="box box-bottom center">
+                <p class="h1r">
+The President has committed to ending veteran homelessness — and in 2014, veteran homelessness hit an all-time low.
+                </p>
+              </div>
+              <div class="slide-footer">
+                <a href="/blog/2014/11/11/chart-week-progress-we-ve-made-ending-veteran-homelessness" target="_blank">Learn More</a>
+              </div>
+              <div class="absolute t0 r0 p1 small">Source: Department of Housing and Urban Development</div>
+            </div>
+            <div id="equalpay" class="slide bg-cover white" style="background-image: url(/sites/default/files/image/equalpay.jpg
+)" data-color="green10">
+              <p class="h1r box box-bottom center">
+                <span class="bold">And the President made it easier for women</span> <br class="mobile-hide">to take control of negotiations about their pay.
+              </p>
+              <div class="slide-footer">
+                <a href="/blog/2014/04/08/taking-action-honor-national-equal-pay-day" target="_blank">Learn More</a>
+              </div>
+            </div>
+            <div id="heres-to-2014" class="slide bg-cover bg-cover-top white" style="background-image: url(/sites/default/files/image/2014_yir_end.jpg)" data-color="green1" data-mp4="http://www.whitehouse.gov/videos/2014/December/2014_YIR_end.mp4">
+              <div class="bg-video-wrap bg-video-center"></div>
+              <div class="box box-centered">
+                <div class="table-cell center">
+                  <p class="h1r mb4" style="margin-bottom:10px;">
+                    &#8220;My presidency is entering the fourth quarter. <br class="mobile-hide">Interesting stuff happens in the fourth quarter.&#8221;<br/><span style="font-size:24px;">President Obama<span class="mobile-hide">, December 19</span></span>
+                  </p>
+                  <p class="h3 mb2" style="margin-bottom:10px;">We're not done yet. As we prepare for 2015, <a href="/email-updates" target="_blank">sign up to make sure you're getting the latest updates</a>. 
+                  <p class="h3 mb2">
+                    Then, share <em>2014: The Year in Review</em>:
+                  </p>
+                  <p class="mb2">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.whitehouse.gov/2014-in-review" target="_blank" class="btn bg-dynamic">
+                      <i class="fa fa-facebook fa-fw"></i>
+                      <span class="mobile-hide">Share</span>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=America%20made%20a%20lot%20of%20progress%20this%20year.%20Check%20out%20the%20highlights%20from%202014%20→%20http%3A%2F%2Fwh.gov%2F2014-in-review" target="_blank" class="btn bg-dynamic">
+                      <i class="fa fa-twitter fa-fw"></i>
+                      <span class="mobile-hide">Tweet</span>
+                    </a>
+                    <a href="mailto:?to=&subject=The White House's 2014 Year in Review&body=Check out WhiteHouse.gov's 2014 Year in Review: http://www.whitehouse.gov/2014-in-review" class="btn bg-dynamic">
+                      <i class="fa fa-envelope fa-fw"></i>
+                      <span class="mobile-hide">Email</span>
+                    </a>
+                  </p>
+                  <!--<input id="share_url" class="input center bg-white" onclick="this.focus();this.select();" readonly="readonly" type="text" value="http://www.whitehouse.gov/2014-in-review" size="30">-->
+                </div>
+              </div>
+              <div class="slide-footer" style="bottom:225px !important;">
+                <span class="mobile-hide kickstarter-bug"><a href="/year-of-action" target="_blank">Learn more about the President's Year of Action.</a>                                               <br/></span>
+                <a href="https://github.com/kickstarter/" target="_blank" class="kickstarter-bug"><img src="/sites/default/files/image/ks-whitehouse-white.png" style="margin:25px;"></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="js-slide-previous rail rail-left p1 clickable no-select mobile-hide hide">
+            <div class="table-cell">
+              <i class="fa fa-chevron-left fa-3x" style="color:white;"></i>
+            </div>
+          </div>
+          <div class="js-slide-next rail rail-right right-align p1 clickable no-select mobile-hide">
+            <p class="js-coach-mark table-cell bold px2 white hide">Start</p>
+            <div class="table-cell">
+              <i class="fa fa-chevron-right fa-3x" style="color:white;"></i>
+            </div>
+          </div>
+
+          </div><!-- .shifty-content -->
+
+        <div class="shifty-menu scrolly menu bg-white">
+          <div class="py4">
+            <ul id="toc" class="list-simple center mb4">
+              <li><a href="#home" class="h2 lh5 block js-slide-btn link-green26">Home</a></li>
+              <li><a href="#sotu" class="h2 lh5 block js-slide-btn link-green31">Introduction</a></li>
+              <li><a href="#denis" class="h2 lh5 block js-slide-btn link-green27">Chief of Staff Reflections</a></li>
+              <li><a href="#jobs1" class="h2 lh5 block js-slide-btn link-green26">More Jobs</a></li>
+              <li><a href="#aca" class="h2 lh5 block js-slide-btn link-green25">Better Health Care</a></li>
+              <li><a href="#communities" class="h2 lh5 block js-slide-btn link-green24">Strengthening Community Policing</a></li>
+              <li><a href="#carbon1" class="h2 lh5 block js-slide-btn link-green23">Cutting Carbon Pollution</a></li>
+              <li><a href="#immigration" class="h2 lh5 block js-slide-btn link-green22">Reforming Immigration</a></li>
+              <li><a href="#net" class="h2 lh5 block js-slide-btn link-green21">Acting for Net Neutrality</a></li>
+              <li><a href="#americaleads1" class="h2 lh5 block js-slide-btn link-green20">Leading the Charge</a></li>
+              <li><a href="#code" class="h2 lh5 block js-slide-btn link-green19">President Obama Codes</a></li>
+              <li><a href="#3d" class="h2 lh5 block js-slide-btn link-green18">A 3D-Printed President</a></li>
+              <li><a href="#ferns" class="h2 lh5 block js-slide-btn link-green17">Sitting Between Two Ferns</a></li>
+              <li><a href="#roam" class="h2 lh5 block js-slide-btn link-green16">Man About Town</a></li>
+              <li><a href="#notalone" class="h2 lh5 block js-slide-btn link-green15">Preventing Violence</a></li>
+              <li><a href="#grad" class="h2 lh5 block js-slide-btn link-green15">More Graduates</a></li>
+              <li><a href="#minwage" class="h2 lh5 block js-slide-btn link-green14">Raises for Americans</a></li>
+              <li><a href="#petitions" class="h2 lh5 block js-slide-btn link-green13">Unlocking Phones</a></li>
+              <li><a href="#tumblr" class="h2 lh5 block js-slide-btn link-green12">Q&A with Tumblr</a></li>
+              <li><a href="#vets" class="h2 lh5 block js-slide-btn link-green11">Combating Veteran Homelessness</a></li>
+              <li><a href="#equalpay" class="h2 lh5 block js-slide-btn link-green10">Wins for Women</a></li>
+            </ul>
+          </div>
+        </div><!-- .shifty-menu -->
+
+        </div><!-- .shifty-inner -->
+      </div><!-- .shifty -->
+
+    <div class="navbar bg-dynamic-a no-select white">
+      <div class="navbar-left left">
+        <button class="js-shifty-toggle btn mr2 bg-dynamic white">
+          <i class="fa fa-list-ul fa-fw"></i>
+          <span class="mobile-hide">View all
+        </span></button>
+        <a href="/year-of-action" target="_blank" class="btn bg-dynamic" class="mobile-hide">
+          <!--<i class="fa fa-share fa-fw"></i>-->
+          <span class="mobile-hide">Year of</span> Action</span>
+        </a>
+      </div>
+      <div class="navbar-right right right-align">
+         <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.whitehouse.gov/2014-in-review" target="_blank" class="btn bg-dynamic">
+          <i class="fa fa-facebook fa-fw"></i>
+          <span class="mobile-hide">Share</span>
+        </a>
+                    <a href="https://twitter.com/intent/tweet?text=America%20made%20a%20lot%20of%20progress%20this%20year.%20Check%20out%20the%20highlights%20from%202014%20→%20http%3A%2F%2Fwh.gov%2F2014-in-review" target="_blank" class="btn bg-dynamic">
+                      <i class="fa fa-twitter fa-fw"></i>
+                      <span class="mobile-hide">Tweet</span>
+                    </a>
+        </a>
+      </div>
+      <div class="h3 caps center mobile-hide" style="font-family:Georgia;color: #4f8fcf;">
+        2014: The Year in Review
+      </div>
+    </div>
+
+  </div><!-- .view -->
+
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/flipsnap.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/slideshow.js"></script>
+
+</body>
+</html>
+
