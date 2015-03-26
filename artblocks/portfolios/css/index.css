@@ -363,7 +363,7 @@ Posters and still images
 }
 
 .scene:nth-child(1) .info header {
-	background-image: url("http://lorempixel.com/g/400/260/abstract");
+	background-image: url("../img/ahmed.png");
 }
 
 .scene:nth-child(2) .info header {
