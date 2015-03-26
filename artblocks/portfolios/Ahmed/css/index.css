@@ -1,6 +1,6 @@
 /* Parts of this file rewritten for compatibility by Brennan Macaig */
 body {
-    background: #111 url('assets/razer.jpg') center top/ cover;
+    background: #111 url('../assets/razer.jpg') center top/ cover;
 }
 h1 {
     color: #3A01DF ;
