@@ -351,27 +351,68 @@ Posters and still images
 **************************************/
 
 .scene:nth-child(1) .movie .poster {
-  background-image: url("http://lorempixel.com/260/400/abstract");
+  background-image: url("../img/ahmedprof.jpg");
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url("http://lorempixel.com/260/400/animals");
+  background-image: url("../img/connorprof.jpg");
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url(../img/poster03.jpg);
+  background-image: url("../img/cooperprof.jpg");
 }
-
+.scene:nth-child(4) .poster {
+  background-image: url("../img/gabeprof.jpg");
+}
+.scene:nth-child(5) .poster {
+    background-image: url("../img/gavinprof.jpg");
+}
+.scene:nth-child(6) .poster {
+    background-image: url("../img/isaiahprof.jpg");
+}
+.scene:nth-child(7) .poster {
+    background-image: url("../img/sammiprof.jpg");
+}
+.scene:nth-child(8) .poster {
+    background-image: url("../img/tristanprof.jpg");
+}
+.scene:nth-child(9) .poster {
+    background-image: url("../img/rob.jpg")
+}
+.scene:nth-child(10) .poster {
+    background-image: url("../img/axelprof.jpg");
+}
 .scene:nth-child(1) .info header {
 	background-image: url("../img/ahmed.png");
 }
 
 .scene:nth-child(2) .info header {
-	background-image: url("http://lorempixel.com/g/400/260/food");
+	background-image: url("");
 }
 
 .scene:nth-child(3) .info header {
-	background-image: url(../img/still03.jpg);
+	background-image: url("");
+}
+.scene:nth-child(4) .info header {
+    
+}
+.scene:nth-child(5) .info header {
+    
+}
+.scene:nth-child(6) .info header {
+    
+}
+.scene:nth-child(7) .info header {
+    
+}
+.scene:nth-child(8) .info header {
+    
+}
+.scene:nth-child(9) .info header {
+    
+}
+.scene:nth-child(10) .info header {
+    
 }
 
 /*************************************
